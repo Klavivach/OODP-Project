@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Item {
+public class SearchFunctionality{
     private String name;
     private String category;
     private double price;
 
-    public Item(String name, String category, double price) {
+    public SearchFunctionality(String name, String category, double price) {
         this.name = name;
         this.category = category;
         this.price = price;
@@ -38,11 +38,11 @@ public class Item {
     }
 
     public static void main(String[] args) {
-        List<Item> itemList = new ArrayList<>();
-        itemList.add(new Item("Call of Duty", "Shooter", 50.0));
-        itemList.add(new Item("World of Warcraft", "MMORPG", 30.0));
-        itemList.add(new Item("FIFA 22", "Sports", 60.0));
-        itemList.add(new Item("Minecraft", "Sandbox", 20.0));
+        List<SearchFunctionality> itemList = new ArrayList<>();
+        itemList.add(new SearchFunctionality("Call of Duty", "Shooter", 50.0));
+        itemList.add(new SearchFunctionality("World of Warcraft", "MMORPG", 30.0));
+        itemList.add(new SearchFunctionality("FIFA 22", "Sports", 60.0));
+        itemList.add(new SearchFunctionality("Minecraft", "Sandbox", 20.0));
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the online market for gaming items!");
@@ -83,9 +83,9 @@ public class Item {
         }
     }
 
-    private static void searchByName(List<Item> itemList, String name) {
-        List<Item> result = new ArrayList<>();
-        for (Item item : itemList) {
+    private static void searchByName(List<SearchFunctionality> itemList, String name) {
+        List<SearchFunctionality> result = new ArrayList<>();
+        for (SearchFunctionality item : itemList) {
             if (item.getName().toLowerCase().contains(name.toLowerCase())) {
                 result.add(item);
             }
@@ -93,9 +93,9 @@ public class Item {
         printItems(result);
     }
 
-    private static void searchByCategory(List<Item> itemList, String category) {
-        List<Item> result = new ArrayList<>();
-        for (Item item : itemList) {
+    private static void searchByCategory(List<SearchFunctionality> itemList, String category) {
+        List<SearchFunctionality> result = new ArrayList<>();
+        for (SearchFunctionality item : itemList) {
             if (item.getCategory().equalsIgnoreCase(category)) {
                 result.add(item);
             }
@@ -103,9 +103,9 @@ public class Item {
         printItems(result);
     }
 
-    private static void searchByPrice(List<Item> itemList, double price) {
-        List<Item> result = new ArrayList<>();
-        for (Item item : itemList) {
+    private static void searchByPrice(List<SearchFunctionality> itemList, double price) {
+        List<SearchFunctionality> result = new ArrayList<>();
+        for (SearchFunctionality item : itemList) {
             if (item.getPrice() <= price) {
                 result.add(item);
             }
@@ -113,14 +113,14 @@ public class Item {
         printItems(result);
     }
 
-    private static void printItems(List<Item> itemList) {
+    private static void printItems(List<SearchFunctionality> itemList) {
         if (itemList.size() == 0) {
             System.out.println("No items found.");
             return;
         }
         System.out.println("Items found:");
-        for (Item item : itemList) {
-            System.out.println("Name: " + item.getName() +
+        for (SearchFunctionality item : itemList) {
+            System.out.println("Name: " + item.getName() + " ");
         }
     }
 }
