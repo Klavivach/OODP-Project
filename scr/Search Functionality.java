@@ -121,3 +121,6 @@ public class Item {
         System.out.println("Items found:");
         for (Item item : itemList) {
             System.out.println("Name: " + item.getName() +
+        }
+    }
+}
