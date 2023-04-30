@@ -24,3 +24,5 @@ Customer Support:  The online market provides customer support to help users wit
 Fraud Prevention:  The online market mechanisms in place to prevent fraudulent activities, such as fake listings or fraudulent payments.
 Seller Verification:  The online market verifies the identity and credibility of sellers before allowing them to list their products on the platform.
 Refund and Return Policies:  The online market has clear refund and return policies that protect the rights of buyers and sellers and ensure fair transactions.
+
+
