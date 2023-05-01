@@ -20,9 +20,29 @@ public class Payment {
     }
 
     private boolean processPayment() {
-        // Code for processing payment using the specified payment method
-        // Returns true if payment is successful, false otherwise
-        // ...
+        public boolean processPayment(double amount, String paymentMethod) {
+            // Implement your payment processing logic here
+            
+            boolean isPaymentSuccessful = false;
+            
+            // Check if the payment method is valid and supported
+            if (paymentMethod.equals("credit card") || paymentMethod.equals("debit card") || paymentMethod.equals("online wallet")) {
+                // Process the payment
+                // Here, you could use a third-party payment processing library or API to handle the actual payment processing
+                // For simplicity, we'll just assume that the payment is successful if the amount is greater than 0
+                if (amount > 0) {
+                    isPaymentSuccessful = true;
+                    System.out.println("Payment of $" + amount + " via " + paymentMethod + " processed successfully.");
+                } else {
+                    System.out.println("Invalid payment amount. Payment not processed.");
+                }
+            } else {
+                System.out.println("Invalid payment method. Payment not processed.");
+            }
+            
+            return isPaymentSuccessful;
+        }
+        
     }
 
     public String getPaymentId() {
