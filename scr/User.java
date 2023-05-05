@@ -4,6 +4,8 @@ public class User {
     private String username;
     private String password;
     private String email;
+    private String firstName;
+    private String lastName;
 
     public User(String username, String password, String email) {
         this.username = username;
@@ -11,7 +13,12 @@ public class User {
         this.email = email;
     }
 
-    public User(String username, String firstname, String lastname, String email , String password) {
+    public User(String username, String firstName, String lastName, String email, String password) {
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
     }
 
     public String getUsername() {
@@ -38,12 +45,29 @@ public class User {
         this.email = email;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the online market for gaming items!");
     }
 
+    public Object getCart() {
+        return null;
+    }
     
 }
-
-
