@@ -19,7 +19,7 @@ public class Payment {
         return paymentId;
     }
 
-        private boolean processPayment(double amount, String paymentMethod) {
+        private boolean processPayment() {
             // Implement your payment processing logic here
             
             boolean isPaymentSuccessful = false;
@@ -42,7 +42,7 @@ public class Payment {
             return isPaymentSuccessful;
         }
         
-    }
+    
 
     public String getPaymentId() {
         return paymentId;

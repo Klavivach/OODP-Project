@@ -7,10 +7,10 @@ public class List{
         private String category;
         private double price;
     
-        public Product(String name, String description, String category, double price) {
+        public Product(String name, String description, double price) {
             this.name = name;
             this.description = description;
-            this.category = category;
+        
             this.price = price;
         }
     

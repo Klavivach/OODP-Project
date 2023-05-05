@@ -11,6 +11,9 @@ public class User {
         this.email = email;
     }
 
+    public User(String username, String firstname, String lastname, String email , String password) {
+    }
+
     public String getUsername() {
         return username;
     }
@@ -39,5 +42,8 @@ public class User {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the online market for gaming items!");
     }
+
+    
 }
+
 
